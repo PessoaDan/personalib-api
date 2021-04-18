@@ -1,18 +1,27 @@
 {
-  "name": "personalib-api",
-  "version": "0.0.1",
-  "description": "rest api for presonalib project",
-  "main": "server.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PessoaDan/personalib-api.git"
-  },
-  "author": "Daniel Pessoa",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PessoaDan/personalib-api/issues"
-  }
+    "name": "personalib-api",
+    "version": "0.0.1",
+    "description": "rest api for presonalib project",
+    "main": "server.ts",
+    "scripts": {
+        "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PessoaDan/personalib-api.git"
+    },
+    "author": "Daniel Pessoa",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PessoaDan/personalib-api/issues"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.11",
+        "@types/typescript": "^2.0.0",
+        "ts-node-dev": "^1.1.6",
+        "typescript": "^4.2.4"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
